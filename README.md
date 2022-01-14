@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 
-I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 2016. I'm from Maputo,Mozambique.
+I'm Nélio Bila,  I'm a Software Developer, and I'm love with working in tech. I'm from Maputo,Mozambique.
 
 ## 🎓 I'm an Graduate student at the Pedagogical University of Maputo
 

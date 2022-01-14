@@ -19,7 +19,6 @@ Here are some ideas to get you started:
 I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 2016. I'm from Maputo,Mozambique.
 
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/nelio?style=social)](https://twitter.com/GhoustBeatz)
 [![Linkedin: nélio bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
 
 

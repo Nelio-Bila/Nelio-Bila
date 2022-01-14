@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 
 I'm Nélio Bila,  I'm a Software Developer, and I'm love with working in tech. I'm from Maputo,Mozambique.
 
-## 🎓 I'm an Graduate student at the Pedagogical University of Maputo
+## 🎓 I'm a Graduate student of the Pedagogical University of Maputo
 
 
 - 👯 I’m looking to collaborate with anyone on any project.

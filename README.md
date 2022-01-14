@@ -105,6 +105,6 @@ These are some of the technologies and tools that I work with:
 
 ![Nélio Bila top most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nelio-Bila)
 ![Nélio Bila Stats](https://github-readme-stats.vercel.app/api?username=Nelio-Bila)
-![nélio Bila Activity](https://activity-graph.herokuapp.com/graph?username={username}&theme=minimal)
+![nélio Bila Activity](https://activity-graph.herokuapp.com/graph?username=Nelio-Bila&theme=minimal)
 
 

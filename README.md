@@ -20,7 +20,7 @@ I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/nelio?style=social)](https://twitter.com/GhoustBeatz)
-[![Linkedin: nelio](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
+[![Linkedin: nélio bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
 
 
 ## ⚡ Technologies
@@ -103,6 +103,6 @@ These are some of the technologies and tools that I work with:
 ![XAMP](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)
 
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username={Nelio-Bila})
+![top](https://github-readme-stats.vercel.app/api/top-langs/?username={Nelio-Bila})
 
 

@@ -104,5 +104,6 @@ These are some of the technologies and tools that I work with:
 
 
 ![Nélio Bila top most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nelio-Bila)
+![Nélio Bila Stats](https://github-readme-stats.vercel.app/api?username=Nelio-Bila)
 
 

@@ -26,9 +26,8 @@ I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 
 - ⚡ Fun fact: I produce music.
 
 ## Find/email me on:
-[![Linkedin: nélio bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
-[mail]: mailto:neliobilla@gmail.com
-[<img align="left" alt="Nelio | Mail" width="40px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][mail]
+[![Linkedin: Nélio Bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
+[![Gmail: Nélio Bila](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&mailto:neliobilla@gmail.com)
 
 
 ## ⚡ Technologies

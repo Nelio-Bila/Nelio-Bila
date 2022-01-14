@@ -27,7 +27,7 @@ I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 
 
 ## Find/email me on:
 [![Linkedin: Nélio Bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
-[![Gmail: Nélio Bila](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=neliobilla@gmail.com)]
+ <a href="mailto:neliobilla@gmail.com"> <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" alt="nelio-bila" height="40" style="vertical-align:top; margin:4px"></a> 
 
 
 ## ⚡ Technologies

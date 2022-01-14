@@ -18,8 +18,17 @@ Here are some ideas to get you started:
 
 I'm Nélio Bila,  I'm a Software Developer, and I've been working in tech since 2016. I'm from Maputo,Mozambique.
 
+## 🎓 I'm an Graduate student at the Pedagogical University of Maputo
 
+
+- 👯 I’m looking to collaborate with anyone on any project.
+- 💬 Ask me about anything
+- ⚡ Fun fact: I produce music.
+
+## Find/email me on:
 [![Linkedin: nélio bila](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/loiane/)](https://www.linkedin.com/in/n%C3%A9lio-bila/)
+[mail]: mailto:neliobilla@gmail.com
+[<img align="left" alt="Nelio | Mail" width="40px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][mail]
 
 
 ## ⚡ Technologies
@@ -109,6 +118,7 @@ These are some of the technologies and tools that I work with:
 ![babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=white)
 
 
+## :trophy: My Github Stats:
 
 ![Nélio Bila top most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nelio-Bila)
 ![Nélio Bila Stats](https://github-readme-stats.vercel.app/api?username=Nelio-Bila)

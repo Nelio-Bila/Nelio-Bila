@@ -103,6 +103,6 @@ These are some of the technologies and tools that I work with:
 ![XAMP](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)
 
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username={nelio-bila})
+![](https://github-readme-stats.vercel.app/api/top-langs/?username={Nelio-Bila})
 
 

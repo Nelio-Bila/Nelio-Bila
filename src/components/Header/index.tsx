@@ -85,7 +85,7 @@ export function Header({
                     color: 'var(--gray-300)'
                   }}
                 >
-                  BR
+                  PT
                 </div>
               }
               checkedIcon={

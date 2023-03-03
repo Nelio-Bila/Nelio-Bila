@@ -1,9 +1,9 @@
 {
-  "name": "leonardo-lissone",
+  "name": "nelio-bila",
   "version": "1.0.0",
-  "description": "Leonardo Lissone's bio portfolio.",
-  "repository": "https://github.com/Lissone/leonardo-lissone.git",
-  "author": "Leonardo Dias Lissone <leonardo.lissonez@gmail.com>",
+  "description": "Nélio Sousa Bila bio portfolio.",
+  "repository": "https://github.com/Nelio-Bila/Nelio-Bila.git",
+  "author": "Nélio Sousa Fenias Bila <neliobilla@gmail.com>",
   "license": "MIT",
   "private": true,
   "config": {
@@ -46,6 +46,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/aos": "^3.0.4",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "17.0.11",
     "@types/styled-components": "^5.1.20",
     "@typescript-eslint/eslint-plugin": "^4.27.0",

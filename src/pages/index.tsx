@@ -1,14 +1,10 @@
 import 'aos/dist/aos.css'
-import Prismic from '@prismicio/client'
 import Aos from 'aos'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import { RichText } from 'prismic-dom'
 import { useEffect, useState } from 'react'
 
-import { ContentType, PrismicContentDocumentResponse } from '@type/content'
-
-import { getPrismicClient } from '@services/prismic'
+import { ContentType } from '@type/content'
 
 import { About } from '@components/About'
 import { Contact } from '@components/Contact'
@@ -42,7 +38,7 @@ export default function Home({ contentLangs }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Leonardo Lissone</title>
+        <title>Nélio Sousa F. Bila</title>
       </Head>
 
       <FixedSocials socials={contentLanguage.socials} />
@@ -77,75 +73,185 @@ export default function Home({ contentLangs }: HomeProps) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const prismic = getPrismicClient()
-
-  const response: PrismicContentDocumentResponse = await prismic.query([
-    Prismic.Predicates.at('document.type', 'content_language')
-  ])
-
-  const contentLangs: ContentType[] = response.results.map(prismicContent => ({
-    lang: prismicContent.uid,
-    email: prismicContent.data.email,
-    socials: prismicContent.data.socials,
-    resumeButtonLabel: prismicContent.data.resume_button_label,
-    contactButtonLabel: prismicContent.data.contact_button_label,
-    resumeCv: prismicContent.data.resume_pdf.url,
-    presentationSection: {
-      heading: prismicContent.data.presentation_heading.map(tagData => tagData.text),
-      text: RichText.asHtml(prismicContent.data.presentation_text)
-    },
-    aboutSection: {
-      heading: prismicContent.data.about_heading,
-      text: RichText.asHtml(prismicContent.data.about_text),
-      profilePhoto: {
-        url: prismicContent.data.profile_photo.url,
-        alt: prismicContent.data.profile_photo.alt
+export const getStaticProps: GetStaticProps = async () => {
+  const contentLangs = [
+    {
+      lang: 'pt-br',
+      email: 'neliobilla@gmail.com',
+      socials: [
+        {
+          name: 'LinkedIn',
+          link: 'https://www.linkedin.com/in/n%C3%A9lio-bila/'
+        }
+      ],
+      resumeButtonLabel: 'CV',
+      contactButtonLabel: 'Contactar',
+      resumeCv:
+        'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
+      presentationSection: {
+        heading: ['Olá', 'Eu sou', 'Nélio Bila'],
+        text: 'Sou um desenvolvedor Fullstack Javascript, com mais de 2 anos de experiência em desenvolvimento web, design de interfaces e experiência do usuário. Tive duas experiências incríveis de trabalho, onde fiquei responsável por planejar, prototipar e desenvolver projetos de alto valor para ambos setores onde atuei. Além de estar muito determinado para meu crescimento pessoal de conhecimento na área da tecnologia, criando projetos sempre inovadores para mim com muito amor e dedicação. '
       },
-      recentTechnologies: prismicContent.data.recent_technologies.map(
-        data => data.technology
-      )
-    },
-    jobsSection: {
-      heading: prismicContent.data.jobs_heading,
-      jobs: [...new Set(prismicContent.data.jobs.map(job => job.company))].map(x => ({
-        company: x,
-        experiences: prismicContent.data.jobs
-          .filter(d => d.company === x)
-          .map(job => ({
-            company: job.company,
-            siteLink: job.site_link.url,
-            role: job.role,
-            startDate: job.start_date,
-            endDate: job.end_date,
-            activities: job.activities.map(tagData => tagData.text)
-          }))
-      }))
-    },
-    projectsSection: {
-      heading: prismicContent.data.projects_heading,
-      projects: prismicContent.data.projects.map(projectData => ({
-        thumbnail: {
-          url: projectData.thumbnail.url,
-          alt: projectData.thumbnail.alt
+      aboutSection: {
+        heading: 'Sobre mim',
+        text: 'Amante da área de tecnologia, com foco em desenvolvimento front-end/back-end, interface de usuário e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projetos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenhgaria de Desenvolvimento de Sistemas, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        profilePhoto: {
+          url: 'https://github.com/nelio-bila.png',
+          alt: 'Nelio Bila'
         },
-        name: projectData.name,
-        description: projectData.description.map(tagData => tagData.text),
-        platform: projectData.platform,
-        isResponsive: projectData.is_responsive,
-        mainTechnologies: projectData.main_technologies.split(' ').join(',  '),
-        goodHabits: projectData.good_habits?.split(' ') ?? [],
-        figmaLink: projectData.figma_link.url ?? null,
-        repositoryLink: projectData.repository_link.url ?? null,
-        productionLink: projectData.production_link.url ?? null
-      })),
-      showMoreButtonLabel: prismicContent.data.show_more_button_label
+        recentTechnologies: ['React', 'NodeJs', 'NextJs', 'Laravel']
+      },
+      jobsSection: {
+        heading: 'Experiência profissional',
+        jobs: [
+          {
+            company: 'Cursiva',
+            experiences: [
+              {
+                company: 'Cursiva',
+                siteLink: 'job.site_link.url',
+                role: 'React Developer',
+                startDate: '10-10-2021',
+                endDate: '18-10-2022',
+                activities: ['Desenvolvimento de vários modulos']
+              }
+            ]
+          }
+        ]
+      },
+      projectsSection: {
+        heading: 'Projectos',
+        projects: [
+          {
+            thumbnail: {
+              url: 'https://github.com/nelio-bila.png',
+              alt: 'Somais'
+            },
+            name: 'Somais',
+            description: ['Aplicação android desenvolvida com React Native'],
+            platform: 'React Native',
+            isResponsive: true,
+            mainTechnologies: '',
+            goodHabits: [],
+            figmaLink: null,
+            repositoryLink: null,
+            productionLink: null
+          },
+          {
+            thumbnail: {
+              url: 'https://github.com/nelio-bila.png',
+              alt: 'Portal de Ortoprotesia'
+            },
+            name: 'Portal de Ortoprotesia',
+            description: [
+              'Plataforma web desenvolvida com Laravel no backend e Vue js no frontend'
+            ],
+            platform: 'Laravel',
+            isResponsive: true,
+            mainTechnologies: 'Laravel, Vuejs',
+            goodHabits: [],
+            figmaLink: null,
+            repositoryLink: 'https://github.com/Nelio-Bila/ortoprotesia',
+            productionLink: null
+          }
+        ],
+        showMoreButtonLabel: 'Mais'
+      },
+      contactSection: {
+        heading: ['Contacto'],
+        text: [
+          'Estou aberto a oportunidades de trabalho. Qualquer forma aqui disponibilizada pode ser útil pra entrar em contacto comigo'
+        ]
+      }
     },
-    contactSection: {
-      heading: prismicContent.data.contact_heading.map(tagData => tagData.text),
-      text: prismicContent.data.contact_text.map(tagData => tagData.text)
+    {
+      lang: 'en-us',
+      email: 'neliobilla@gmail.com',
+      socials: [
+        {
+          name: 'LinkedIn',
+          link: 'https://www.linkedin.com/in/n%C3%A9lio-bila/'
+        }
+      ],
+      resumeButtonLabel: 'Resume',
+      contactButtonLabel: 'Contact',
+      resumeCv:
+        'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
+      presentationSection: {
+        heading: ['Hi', 'I am', 'Nélio Bila'],
+        text: 'Sou um desenvolvedor Fullstack Javascript, com mais de 2 anos de experiência em desenvolvimento web, design de interfaces e experiência do usuário. Tive duas experiências incríveis de trabalho, onde fiquei responsável por planejar, prototipar e desenvolver projetos de alto valor para ambos setores onde atuei. Além de estar muito determinado para meu crescimento pessoal de conhecimento na área da tecnologia, criando projetos sempre inovadores para mim com muito amor e dedicação. '
+      },
+      aboutSection: {
+        heading: 'About me',
+        text: 'Estudante e amante da área de tecnologia, com foco em desenvolvimento front-end/back-end, interface de usuário e engenharia de software. Objetivo de me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projetos para aplicar e compartilhar conhecimentos e experiências. Bacharelando Sistemas de Informação, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        profilePhoto: {
+          url: 'https://github.com/nelio-bila.png',
+          alt: 'Nelio Bila'
+        },
+        recentTechnologies: ['React', 'NodeJs', 'NextJs', 'Laravel']
+      },
+      jobsSection: {
+        heading: 'Profissional Experience',
+        jobs: [
+          {
+            company: 'Cursiva',
+            experiences: [
+              {
+                company: 'Cursiva',
+                siteLink: 'job.site_link.url',
+                role: 'React Developer',
+                startDate: '10-10-2021',
+                endDate: '18-10-2022',
+                activities: ['Desenvolvimento de vários modulos']
+              }
+            ]
+          }
+        ]
+      },
+      projectsSection: {
+        heading: 'Projects',
+        projects: [
+          {
+            thumbnail: {
+              url: 'https://github.com/nelio-bila.png',
+              alt: 'Somais'
+            },
+            name: 'Somais',
+            description: ['Android app developed with React Native'],
+            platform: 'React Native',
+            isResponsive: true,
+            mainTechnologies: '',
+            goodHabits: [],
+            figmaLink: null,
+            repositoryLink: null,
+            productionLink: null
+          },
+          {
+            thumbnail: {
+              url: 'https://github.com/nelio-bila.png',
+              alt: 'Orthophaedics Portal'
+            },
+            name: 'Orthophaedics Portal',
+            description: [
+              'Web Platform developed with Laravel on the backend and Vue js on the frontend'
+            ],
+            platform: 'Laravel',
+            isResponsive: true,
+            mainTechnologies: 'Laravel, Vuejs',
+            goodHabits: [],
+            figmaLink: null,
+            repositoryLink: 'https://github.com/Nelio-Bila/ortoprotesia',
+            productionLink: null
+          }
+        ],
+        showMoreButtonLabel: 'More'
+      },
+      contactSection: {
+        heading: ['Contact'],
+        text: ['Whatsapp: +258 867539079']
+      }
     }
-  }))
+  ]
 
   const contentLangsFormatted = {}
 

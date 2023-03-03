@@ -94,7 +94,7 @@ export const getStaticProps: GetStaticProps = async () => {
       },
       aboutSection: {
         heading: 'Sobre mim',
-        text: 'Amante da área de tecnologia, com foco em desenvolvimento front-end/back-end, interface de usuário e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projetos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenhgaria de Desenvolvimento de Sistemas, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        text: 'Amante da tecnologia, com foco em desenvolvimento front-end/back-end, interface de usuário e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projectos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenharia de Desenvolvimento de Sistemas, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
@@ -179,11 +179,11 @@ export const getStaticProps: GetStaticProps = async () => {
         'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
       presentationSection: {
         heading: ['Hi', 'I am', 'Nélio Bila'],
-        text: 'Sou um desenvolvedor Fullstack Javascript, com mais de 2 anos de experiência em desenvolvimento web, design de interfaces e experiência do usuário. Tive duas experiências incríveis de trabalho, onde fiquei responsável por planejar, prototipar e desenvolver projetos de alto valor para ambos setores onde atuei. Além de estar muito determinado para meu crescimento pessoal de conhecimento na área da tecnologia, criando projetos sempre inovadores para mim com muito amor e dedicação. '
+        text: "I'm a Fullstack Javascript developer, with more than 2 years of experience in web development, interface design and user experience. I had two incredible work experiences, where I was responsible for planning, prototyping and developing high value projects for both sectors where I worked. In addition to being very determined for my personal growth in knowledge in the field of technology, always creating innovative projects for myself with a lot of love and dedication."
       },
       aboutSection: {
         heading: 'About me',
-        text: 'Estudante e amante da área de tecnologia, com foco em desenvolvimento front-end/back-end, interface de usuário e engenharia de software. Objetivo de me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projetos para aplicar e compartilhar conhecimentos e experiências. Bacharelando Sistemas de Informação, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        text: 'Technology lover, with a focus on front-end/back-end development, user interface and software engineering. I aim to become an increasingly complete professional, always looking to learn and develop projects to apply and share knowledge and experiences. Degree in Systems Development Engineering, creating applications autonomously, looking for challenges, working with charisma, will and passion. Professionalism is my focus.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
@@ -202,7 +202,7 @@ export const getStaticProps: GetStaticProps = async () => {
                 role: 'React Developer',
                 startDate: '10-10-2021',
                 endDate: '18-10-2022',
-                activities: ['Desenvolvimento de vários modulos']
+                activities: ['Development of multiple modules']
               }
             ]
           }
@@ -248,7 +248,9 @@ export const getStaticProps: GetStaticProps = async () => {
       },
       contactSection: {
         heading: ['Contact'],
-        text: ['Whatsapp: +258 867539079']
+        text: [
+          'I am open to job opportunities. Any form provided here may be useful to get in touch with me'
+        ]
       }
     }
   ]

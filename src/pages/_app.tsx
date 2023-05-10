@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { AppProps } from 'next/app'
 
 import { FixedBorderLed } from '@components/FixedBorderLed'
@@ -17,6 +18,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </Content>
       </Container>
+
+      <Analytics />
     </>
   )
 }

@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@prismicio/client": "5",
+    "@vercel/analytics": "^1.0.1",
     "aos": "^2.3.4",
     "next": "11.0.0",
     "prismic-dom": "^2.2.7",

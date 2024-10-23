@@ -2,6 +2,7 @@ import { SocialContent } from '@/types/content'
 
 import { SocialIcon } from '../SocialIcon'
 import { Container, Content } from './styles'
+import Image from 'next/image'
 
 interface FixedSocialsProps {
   socials: SocialContent[]
@@ -17,7 +18,7 @@ export function FixedSocials({ socials }: FixedSocialsProps) {
           </a>
         ))}
 
-        <img src="/images/cable-fixed-socials.svg" alt="Led cable" />
+        <Image src="/images/cable-fixed-socials.svg" alt="Led cable" />
       </Content>
     </Container>
   )

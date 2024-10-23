@@ -9,6 +9,7 @@ import {
   SkillsList,
   PhotoContainer
 } from './styles'
+import Image from 'next/image'
 
 interface AboutProps {
   aboutContent: AboutContent
@@ -20,7 +21,7 @@ export function About({ aboutContent }: AboutProps) {
       <Content>
         <Column>
           <Heading>
-            <img src="/icons/arrow-heading.svg" alt="Big arrow with led" />
+            <Image src="/icons/arrow-heading.svg" alt="Big arrow with led" />
 
             <h1>{aboutContent.heading}</h1>
           </Heading>
@@ -34,7 +35,7 @@ export function About({ aboutContent }: AboutProps) {
           <SkillsList>
             {aboutContent.recentTechnologies.map(technology => (
               <li key={technology}>
-                <img src="/icons/arrow.svg" alt="Red arrow with led" />
+                <Image src="/icons/arrow.svg" alt="Red arrow with led" />
                 {technology}
               </li>
             ))}
@@ -43,8 +44,8 @@ export function About({ aboutContent }: AboutProps) {
 
         <Column>
           <PhotoContainer>
-            <img src="/images/avatar-border.svg" alt="Avatar border" />
-            <img
+            <Image src="/images/avatar-border.svg" alt="Avatar border" />
+            <Image
               src={aboutContent.profilePhoto.url}
               alt={aboutContent.profilePhoto.alt}
             />

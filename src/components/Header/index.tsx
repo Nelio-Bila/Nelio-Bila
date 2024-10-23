@@ -17,6 +17,7 @@ import {
   LanguageSwitch,
   ResumeButton
 } from './styles'
+import Image from 'next/image'
 
 interface HeaderProps {
   language: string
@@ -36,7 +37,7 @@ export function Header({
   return (
     <Container>
       <Content>
-        <img src="/logo.svg" alt="Logo" />
+        <Image src="/logo.svg" alt="Logo" />
 
         <Hamburguer onClick={() => setHamburguerIsOpen(!hamburguerIsOpen)}>
           <FiMenu size={30} />

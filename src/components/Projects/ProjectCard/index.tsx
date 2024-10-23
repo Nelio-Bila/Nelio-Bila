@@ -14,6 +14,7 @@ import {
   FeaturedInformation,
   SeparateRow
 } from './styles'
+import Image from 'next/image'
 
 interface ProjectCardProps {
   projectContent: ProjectContent
@@ -24,7 +25,7 @@ export function ProjectCard({ projectContent }: ProjectCardProps) {
     <Container data-aos="fade-up" data-aos-duration="1100">
       <Content>
         <Cover>
-          <img src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} />
+          <Image src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} />
 
           <CoverActions className="project-card-actions">
             {projectContent.figmaLink && (
@@ -67,28 +68,28 @@ export function ProjectCard({ projectContent }: ProjectCardProps) {
               {projectContent.goodHabits.map(technology => {
                 if (technology === 'eslint')
                   return (
-                    <img key={technology} src="/icons/eslint.svg" alt="Eslint icon" />
+                    <Image key={technology} src="/icons/eslint.svg" alt="Eslint icon" />
                   )
                 else if (technology === 'prettier')
                   return (
-                    <img key={technology} src="/icons/prettier.svg" alt="Prettier icon" />
+                    <Image key={technology} src="/icons/prettier.svg" alt="Prettier icon" />
                   )
                 else if (technology === 'test')
-                  return <img key={technology} src="/icons/test.svg" alt="Test icon" />
+                  return <Image key={technology} src="/icons/test.svg" alt="Test icon" />
               })}
             </div>
 
             <div>
               {projectContent.isResponsive || projectContent.platform === 'mobile' ? (
-                <img src="/icons/mobile.svg" alt="Cellphone icon" />
+                <Image src="/icons/mobile.svg" alt="Cellphone icon" />
               ) : null}
 
               {projectContent.platform === 'web' && (
-                <img src="/icons/web.svg" alt="Web icon" />
+                <Image src="/icons/web.svg" alt="Web icon" />
               )}
 
               {projectContent.platform === 'desktop' && (
-                <img src="/icons/desktop.svg" alt="Desktop icon" />
+                <Image src="/icons/desktop.svg" alt="Desktop icon" />
               )}
             </div>
           </SeparateRow>

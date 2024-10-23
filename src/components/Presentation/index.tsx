@@ -8,6 +8,7 @@ import {
   ResumeText,
   ContactButton
 } from './styles'
+import Image from 'next/image'
 
 interface PresentationProps {
   presentationContent: PresentationContent
@@ -39,7 +40,7 @@ export function Presentation({
       </Content>
 
       <ImageContainer>
-        <img src="/images/bearing-led.svg" alt="Bearing with led" />
+        <Image src="/images/bearing-led.svg" alt="Bearing with led" />
       </ImageContainer>
     </Container>
   )

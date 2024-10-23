@@ -1,9 +1,9 @@
-import { Nunito, Poppins } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'
+import { Poppins } from 'next/font/google'
 import StyledComponentsRegistry from '@/lib/registry'
 import { FixedBorderLed } from '@/components/FixedBorderLed'
 import { Container, Content } from '@/styles/app'
 import { GlobalStyle } from '@/styles/global'
+import { Analytics } from '@vercel/analytics/react'
 
 
 const poppins = Poppins({

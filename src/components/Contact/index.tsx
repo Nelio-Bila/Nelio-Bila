@@ -11,6 +11,7 @@ import {
   ContactButton,
   Socials
 } from './styles'
+import Image from 'next/image'
 
 interface ContactProps {
   contactContent: ContactContent
@@ -29,7 +30,7 @@ export function Contact({
     <Container id="contact">
       <Content data-aos="fade-up">
         <Subtitle>
-          <img src="/icons/arrow-heading.svg" alt="Big arrow with led" />
+          <Image src="/icons/arrow-heading.svg" alt="Big arrow with led" />
 
           <h2>{contactContent.heading[0]}</h2>
         </Subtitle>
@@ -53,7 +54,7 @@ export function Contact({
         </Socials>
       </Content>
 
-      <img className="bearing-led" src="/images/bearing-led.svg" alt="Bearing with led" />
+      <Image className="bearing-led" src="/images/bearing-led.svg" alt="Bearing with led" />
     </Container>
   )
 }

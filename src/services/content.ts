@@ -14,7 +14,7 @@ const Content: ContentType = {
   resumeCv: 'string',
   presentationSection: {
     heading: ['Olá, eu sou Nélio Bila'],
-    text: 'Sou um desenvolvedor Fullstack Javascript, com mais de 2 anos de experiência em desenvolvimento web, design de interfaces e experiência do usuário. Tive duas experiências incríveis de trabalho, onde fiquei responsável por planejar, prototipar e desenvolver projetos de alto valor para ambos setores onde atuei. Além de estar muito determinado para meu crescimento pessoal de conhecimento na área da tecnologia, criando projetos sempre inovadores para mim com muito amor e dedicação.'
+    text: 'Sou um Técnico Superior de TIC\'s, um desenvolvedor Fullstack, com experiência em desenvolvimento web e mobile. Além de estar muito determinado para meu crescimento pessoal de conhecimento na área da tecnologia, criando projectos sempre inovadores com muito amor e dedicação.'
   },
   aboutSection: {
     heading: 'Sobre mim',

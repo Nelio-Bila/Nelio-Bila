@@ -1,3 +1,5 @@
+'use client'
+
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,17 +10,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --red-200: #D06C73;
-    --red-400: #CA3E47;
+    --primary-200: #D06C73;
+    --primary-400: #CA3E47;
 
-    --gray-100: #D2D2D2;
-    --gray-300: #979797;
-    --gray-500: #7E7E7E;
-    --gray-600: #666666;
-    --gray-700: #525252;
-    --gray-800: #414141;
-    --gray-900: #313131;
-    --gray-900-opacity-80: rgba(49, 49, 49, 0.8);
+    --neutral-100: #D2D2D2;
+    --neutral-300: #979797;
+    --neutral-500: #7E7E7E;
+    --neutral-600: #666666;
+    --neutral-700: #525252;
+    --neutral-800: #414141;
+    --neutral-900: #313131;
+    --neutral-900-opacity-80: rgba(49, 49, 49, 0.8);
   }
 
   @media (max-width: 1080px) {
@@ -40,20 +42,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--gray-900);
+    background: var(--neutral-900);
   }
 
   body, input, textarea, button {
-    font: 400 1rem Nunito, sans-serif;
 
     border: 0;
 
-    color: var(--gray-300);
+    color: var(--neutral-300);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    color: var(--gray-100);
+    color: var(--neutral-100);
   }
 
   h1 {
@@ -78,7 +79,7 @@ export const GlobalStyle = createGlobalStyle`
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--red-400) var(--gray-800);
+    scrollbar-color: var(--primary-400) var(--neutral-800);
   }
 
   /* Chrome, Edge, and Safari */
@@ -88,14 +89,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: var(--gray-800);
+    background: var(--neutral-800);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--red-400);
+    background-color: var(--primary-400);
   }
 
   ::-webkit-scrollbar-thumb:horizontal{
-    background-color: var(--gray-600);
+    background-color: var(--neutral-600);
   }
 `

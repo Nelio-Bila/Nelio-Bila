@@ -1,4 +1,4 @@
-import { PresentationContent } from '@type/content'
+import { PresentationContent } from '@/types/content'
 
 import {
   Container,
@@ -33,7 +33,7 @@ export function Presentation({
           }}
         />
 
-        <ContactButton to="contact" smooth duration={1000} spy exact="true" offset={-80}>
+        <ContactButton to="contact" smooth duration={1000} spy offset={-80}>
           {contactButtonLabel}
         </ContactButton>
       </Content>

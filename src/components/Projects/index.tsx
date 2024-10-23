@@ -1,8 +1,9 @@
 // import { FiHelpCircle } from 'react-icons/fi'
+'use client'
 
 import { useEffect, useState } from 'react'
 
-import { ProjectsContent } from '@type/content'
+import { ProjectsContent } from '@/types/content'
 
 import { ProjectCard } from './ProjectCard'
 import { Container, Heading, Content, ShowMoreButton } from './styles'

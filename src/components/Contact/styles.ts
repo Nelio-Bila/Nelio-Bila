@@ -63,7 +63,7 @@ export const Subtitle = styled.div`
     font-size: 1.8rem;
     font-weight: 400;
 
-    color: var(--red-400);
+    color: var(--primary-400);
 
     @media (max-width: 440px) {
       font-size: 1.4rem;
@@ -98,12 +98,12 @@ export const ContactButton = styled.a`
 
   font-size: 1.2rem;
 
-  border: 1px solid var(--red-400);
+  border: 1px solid var(--primary-400);
   border-radius: 0.5rem;
   box-shadow: 0rem 0rem 1.875rem rgba(202, 62, 71, 0.7);
 
-  color: var(--gray-300);
-  background: var(--gray-900-opacity-80);
+  color: var(--neutral-300);
+  background: var(--neutral-900-opacity-80);
 
   transition: 0.3s transform;
 
@@ -131,7 +131,7 @@ export const Socials = styled.div`
     }
 
     svg {
-      color: var(--gray-600);
+      color: var(--neutral-600);
     }
   }
 

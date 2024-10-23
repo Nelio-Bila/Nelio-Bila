@@ -1,3 +1,5 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -38,7 +40,7 @@ export const Heading = styled.div`
     line-height: 3rem;
     text-shadow: 0rem 0.25rem 2.5rem rgba(202, 62, 71, 0.5);
 
-    color: var(--red-400);
+    color: var(--primary-400);
 
     @media (max-width: 840px) {
       font-size: 2rem;
@@ -56,7 +58,7 @@ export const Heading = styled.div`
     }
 
     svg {
-      color: var(--gray-600);
+      color: var(--neutral-600);
     }
   }
 `
@@ -83,18 +85,18 @@ export const ShowMoreButton = styled.button`
 
   font-size: 1.2rem;
 
-  border: 2px solid var(--gray-800);
+  border: 2px solid var(--neutral-800);
   border-radius: 0.5rem;
 
-  color: var(--gray-300);
-  background: var(--gray-900-opacity-80);
+  color: var(--neutral-300);
+  background: var(--neutral-900-opacity-80);
 
   transition: 0.3s all;
 
   &:hover {
     transform: scale(1.03);
 
-    box-shadow: 0rem 0rem 1rem var(--red-400);
-    border-color: var(--red-400);
+    box-shadow: 0rem 0rem 1rem var(--primary-400);
+    border-color: var(--primary-400);
   }
 `

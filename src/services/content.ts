@@ -1,4 +1,4 @@
-import { ContentType } from '@type/content'
+import { ContentType } from '@/types/content'
 
 const Content: ContentType = {
   lang: 'pt_br',

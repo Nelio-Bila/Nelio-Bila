@@ -1,21 +1,23 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 20rem;
   min-height: 26.85rem;
 
-  border: 2px solid var(--gray-800);
+  border: 2px solid var(--neutral-800);
   border-radius: 0.625rem;
 
-  background: var(--gray-900-opacity-80);
+  background: var(--neutral-900-opacity-80);
 
   transition: 0.3s all;
 
   &:hover {
     transform: scale(1.02);
 
-    border-color: var(--red-400);
-    box-shadow: 0rem 0rem 1rem var(--red-400);
+    border-color: var(--primary-400);
+    box-shadow: 0rem 0rem 1rem var(--primary-400);
   }
 
   :hover .project-card-actions {
@@ -77,7 +79,7 @@ export const CoverActions = styled.div`
 
     border-radius: 100%;
 
-    background: var(--gray-900);
+    background: var(--neutral-900);
 
     transition: 0.3s filter;
 
@@ -86,7 +88,7 @@ export const CoverActions = styled.div`
     }
 
     svg {
-      color: var(--red-400);
+      color: var(--primary-400);
     }
   }
 
@@ -115,7 +117,7 @@ export const Divider = styled.div`
 
   border-radius: 100%;
 
-  background: var(--gray-800);
+  background: var(--neutral-800);
 `
 
 export const TechnologiesRow = styled.div`
@@ -130,7 +132,7 @@ export const TechnologiesRow = styled.div`
   span {
     font-size: 0.875rem;
 
-    color: var(--red-200);
+    color: var(--primary-200);
   }
 `
 

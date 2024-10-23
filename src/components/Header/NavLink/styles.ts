@@ -1,3 +1,5 @@
+'use client'
+
 import { Link as Scroll } from 'react-scroll'
 import styled from 'styled-components'
 
@@ -15,14 +17,14 @@ export const MenuLink = styled(Scroll)`
 
   svg {
     path {
-      fill: var(--gray-600);
+      fill: var(--neutral-600);
     }
   }
 
   &.active {
     svg {
       path {
-        fill: var(--red-400);
+        fill: var(--primary-400);
       }
     }
   }

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 
-import { Books } from '@components/Icons/Books'
-import { Home } from '@components/Icons/Home'
-import { Skills } from '@components/Icons/Skills'
-import { Suitcase } from '@components/Icons/Suitcase'
+import { Books } from '@/components/Icons/Books'
+import { Home } from '@/components/Icons/Home'
+import { Skills } from '@/components/Icons/Skills'
+import { Suitcase } from '@/components/Icons/Suitcase'
 
 import { NavLink } from './NavLink'
 import {
@@ -82,7 +82,7 @@ export function Header({
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    color: 'var(--gray-300)'
+                    color: 'var(--neutral-300)'
                   }}
                 >
                   PT
@@ -98,7 +98,7 @@ export function Header({
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    color: 'var(--gray-500)'
+                    color: 'var(--neutral-500)'
                   }}
                 >
                   EN

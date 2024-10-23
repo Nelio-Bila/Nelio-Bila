@@ -1,3 +1,5 @@
+'use client'
+
 import Switch from 'react-switch'
 import styled from 'styled-components'
 
@@ -9,7 +11,7 @@ export const Container = styled.header`
 
   box-shadow: 0rem 0rem 1.875rem rgba(0, 0, 0, 0.25);
 
-  background: var(--gray-800);
+  background: var(--neutral-800);
 `
 
 export const Content = styled.div`
@@ -66,7 +68,7 @@ export const Menu = styled.div<MenuProps>`
     justify-content: flex-start;
     gap: 6rem;
 
-    background: var(--gray-800);
+    background: var(--neutral-800);
 
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -100,8 +102,8 @@ export const Buttons = styled.div`
 `
 
 export const LanguageSwitch = styled(Switch)`
-  border: 2px solid var(--red-400);
-  box-shadow: 0rem 0rem 1.25rem var(--red-400);
+  border: 2px solid var(--primary-400);
+  box-shadow: 0rem 0rem 1.25rem var(--primary-400);
 `
 
 export const ResumeButton = styled.a`
@@ -109,12 +111,12 @@ export const ResumeButton = styled.a`
 
   font-weight: 600;
 
-  border: 2px solid var(--red-400);
+  border: 2px solid var(--primary-400);
   border-radius: 0.2rem;
-  box-shadow: 0rem 0rem 1.25rem var(--red-400);
+  box-shadow: 0rem 0rem 1.25rem var(--primary-400);
 
-  color: var(--red-400);
-  background: var(--gray-900-opacity-80);
+  color: var(--primary-400);
+  background: var(--neutral-900-opacity-80);
 
   transition: 0.3s transform;
 

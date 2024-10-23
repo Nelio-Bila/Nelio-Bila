@@ -1,3 +1,5 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -49,7 +51,7 @@ export const Heading = styled.div`
     line-height: 3.5rem;
     text-shadow: 0rem 0.25rem 2.5rem rgba(202, 62, 71, 0.5);
 
-    color: var(--red-400);
+    color: var(--primary-400);
 
     @media (max-width: 680px) {
       font-size: 2.5rem;

@@ -1,3 +1,5 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -32,7 +34,7 @@ export const Content = styled.div`
     }
 
     svg {
-      color: var(--gray-600);
+      color: var(--neutral-600);
     }
   }
 

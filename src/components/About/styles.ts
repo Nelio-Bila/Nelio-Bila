@@ -70,7 +70,7 @@ export const Heading = styled.div`
     line-height: 3.5rem;
     text-shadow: 0rem 0.25rem 2.5rem rgba(202, 62, 71, 0.5);
 
-    color: var(--red-400);
+    color: var(--primary-400);
 
     @media (max-width: 360px) {
       font-size: 2.7rem;
@@ -94,7 +94,7 @@ export const Text = styled.div`
     em {
       font-style: normal;
 
-      color: var(--red-200);
+      color: var(--primary-200);
     }
   }
 
@@ -104,7 +104,7 @@ export const Text = styled.div`
 `
 
 export const HighlightText = styled.span`
-  color: var(--red-200);
+  color: var(--primary-200);
 `
 
 export const SkillsList = styled.ul`
@@ -122,7 +122,7 @@ export const SkillsList = styled.ul`
     font-size: 1.2rem;
     font-weight: bold;
 
-    color: var(--gray-500);
+    color: var(--neutral-500);
   }
 `
 

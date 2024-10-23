@@ -1,3 +1,5 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -35,9 +37,9 @@ export const Tab = styled.li`
     padding: 1rem 2rem;
 
     font-size: 1.2rem;
-    border-left: 0.25rem solid var(--gray-800);
+    border-left: 0.25rem solid var(--neutral-800);
 
-    color: var(--gray-500);
+    color: var(--neutral-500);
     background: none;
 
     transition: 0.3s filter;
@@ -48,7 +50,7 @@ export const Tab = styled.li`
 
     @media (max-width: 750px) {
       border-left: 0;
-      border-top: 0.25rem solid var(--gray-800);
+      border-top: 0.25rem solid var(--neutral-800);
     }
 
     @media (max-width: 600px) {
@@ -57,8 +59,8 @@ export const Tab = styled.li`
   }
 
   &.active button {
-    border-color: var(--red-400);
-    color: var(--gray-100);
+    border-color: var(--primary-400);
+    color: var(--neutral-100);
   }
 `
 
@@ -79,7 +81,7 @@ export const Content = styled.div`
       align-items: start;
       gap: 0.5rem;
 
-      color: var(--gray-500);
+      color: var(--neutral-500);
 
       img {
         margin-top: 0.2rem;
@@ -125,7 +127,7 @@ export const HeadingContentTab = styled.div`
 export const Highlight = styled.a`
   font-size: 2rem;
 
-  color: var(--red-200);
+  color: var(--primary-200);
 
   transition: 0.3s all;
 

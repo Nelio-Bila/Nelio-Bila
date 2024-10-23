@@ -9,7 +9,7 @@ interface NavLinkProps {
 
 export function NavLink({ to, children }: NavLinkProps) {
   return (
-    <MenuLink to={to} smooth duration={1000} spy exact="true" offset={-80}>
+    <MenuLink to={to} smooth={true} duration={1000} spy={true} offset={-80}>
       {children}
     </MenuLink>
   )

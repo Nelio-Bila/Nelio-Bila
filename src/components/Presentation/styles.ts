@@ -1,3 +1,5 @@
+'use client'
+
 import { Link as Scroll } from 'react-scroll'
 import styled from 'styled-components'
 
@@ -69,7 +71,7 @@ export const Heading = styled.div`
     text-transform: uppercase;
     line-height: 2.5rem;
 
-    color: var(--gray-300);
+    color: var(--neutral-300);
   }
 
   h2 {
@@ -79,7 +81,7 @@ export const Heading = styled.div`
     text-transform: uppercase;
     line-height: 2.5rem;
 
-    color: var(--gray-100);
+    color: var(--neutral-100);
   }
 
   h1 {
@@ -90,7 +92,7 @@ export const Heading = styled.div`
     line-height: 3.5rem;
     text-shadow: 0rem 0.25rem 2.5rem rgba(202, 62, 71, 0.5);
 
-    color: var(--red-400);
+    color: var(--primary-400);
   }
 
   @media (max-width: 965px) {
@@ -127,13 +129,13 @@ export const ResumeText = styled.div`
     em {
       font-style: normal;
 
-      color: var(--red-200);
+      color: var(--primary-200);
     }
   }
 `
 
 export const HighlightText = styled.span`
-  color: var(--red-200);
+  color: var(--primary-200);
 `
 
 export const ContactButton = styled(Scroll)`
@@ -142,12 +144,12 @@ export const ContactButton = styled(Scroll)`
 
   font-size: 1.2rem;
 
-  border: 1px solid var(--red-400);
+  border: 1px solid var(--primary-400);
   border-radius: 0.5rem;
   box-shadow: 0rem 0rem 1.875rem rgba(202, 62, 71, 0.7);
 
-  color: var(--gray-300);
-  background: var(--gray-900-opacity-80);
+  color: var(--neutral-300);
+  background: var(--neutral-900-opacity-80);
 
   transition: 0.3s transform;
 

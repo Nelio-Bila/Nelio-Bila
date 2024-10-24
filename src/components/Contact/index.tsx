@@ -2,6 +2,9 @@ import { ContactContent, SocialContent } from '@/types/content'
 
 import { SocialIcon } from '@/components/SocialIcon'
 
+import ArrowHeading from '../../../public/icons/arrow-heading.svg'
+import BearingLed from '../../../public/images/bearing-led.svg'
+
 import {
   Container,
   Content,
@@ -30,7 +33,7 @@ export function Contact({
     <Container id="contact">
       <Content data-aos="fade-up">
         <Subtitle>
-          <Image src="/icons/arrow-heading.svg" alt="Big arrow with led" />
+          <Image  src={ArrowHeading} alt="Big arrow with led" />
 
           <h2>{contactContent.heading[0]}</h2>
         </Subtitle>
@@ -54,7 +57,7 @@ export function Contact({
         </Socials>
       </Content>
 
-      <Image className="bearing-led" src="/images/bearing-led.svg" alt="Bearing with led" />
+      <Image  className="bearing-led" src={BearingLed} alt="Bearing with led" />
     </Container>
   )
 }

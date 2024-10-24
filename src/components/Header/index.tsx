@@ -18,6 +18,7 @@ import {
   ResumeButton
 } from './styles'
 import Image from 'next/image'
+import Logo from '../../../public/logo.svg'
 
 interface HeaderProps {
   language: string
@@ -37,7 +38,7 @@ export function Header({
   return (
     <Container>
       <Content>
-        <Image src="/logo.svg" alt="Logo" />
+        <Image  src={Logo} alt="Logo" />
 
         <Hamburguer onClick={() => setHamburguerIsOpen(!hamburguerIsOpen)}>
           <FiMenu size={30} />

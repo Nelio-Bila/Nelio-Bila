@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <head />
-      <body>
+      <body className={poppins.className}>
         <StyledComponentsRegistry>
           <GlobalStyle />
           <Container>

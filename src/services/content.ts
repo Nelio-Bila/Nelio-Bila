@@ -23,7 +23,7 @@ const Content: ContentType = {
       url: 'https://github.com/nelio-bila.png',
       alt: 'nelio bila'
     },
-    recentTechnologies: ['React', 'NodeJs', 'NextJs', 'Laravel']
+    recentTechnologies: ['React', 'NextJs', 'Django', 'Laravel', 'NodeJs',]
   },
   jobsSection: {
     heading: 'Experiências de trabalho',
@@ -32,15 +32,39 @@ const Content: ContentType = {
         company: 'Cursiva',
         experiences: [
           {
+            company: 'Hospital Central de Maputo',
+            siteLink: 'https://hcm.gov.mz/',
+            role: 'Técnico Superior de TIC\'s',
+            startDate: '10-10-2021',
+            endDate: 'Presente',
+            activities: [
+              'Responsavel pelo pleno funcionamento, dos Sistemas de Informação instalados no Hospital.',
+              'Capacitação e assistência aos funcionários no uso dos recursos informáticos do Hospital.',
+              'Avaliação das necessidades e recolha de requisitos para melhor funcionamento e expansão dos sistemas informáticos',
+            ]
+          },
+          {
+            company: 'Cortex',
+            siteLink: 'https://cortex.co.mz/',
+            role: 'Desenvolvedor de Software',
+            startDate: '10-07-2023',
+            endDate: '10-12-2023',
+            activities: [
+              'Responsavel pela implementação de features no backend (Laravel) e frontend(Next js) da aplicação Bilheteca',
+              'Responsavel pelo rastreio e correção de bugs no backend (Laravel) e frontend(Next js) da aplicação Bilheteca',
+              'Documentação de API\'s e demais componentes do aplicação Bilheteca',
+            ]
+          },
+          {
             company: 'Cursiva',
             siteLink: 'https://app.explicador.co.mz/',
-            role: 'Software developer',
+            role: 'Desenvolvedor de Software',
             startDate: '10-10-2021',
             endDate: '18-10-2022',
             activities: [
               'Implementação de técnicas de desenvolvimento para a elaboração de sistemas (Documentação técnica de aplicações, utilizando flowcharts e wireframes). Redesign e prototipagem dos principais serviços web da empresa utilizando Figma. Manutenção e implementação de melhorias nos serviços públicos e privados da organização.'
             ]
-          }
+          },
         ]
       }
     ]
@@ -54,14 +78,14 @@ const Content: ContentType = {
           alt: 'nelio'
         },
         name: 'Nélio Sousa Bila',
-        description: ['Desenvolvedor Fullstack'],
+        description: ['Meu portifolio'],
         platform: 'Nextjs',
         isResponsive: true,
         mainTechnologies: 'Javascript',
         goodHabits: ['Clean code', 'TDD'],
         figmaLink: null,
-        repositoryLink: null,
-        productionLink: null
+        repositoryLink: 'https://github.com/Nelio-Bila/Nelio-Bila.git ',
+        productionLink: 'https://neliobila.online'
       }
     ],
     showMoreButtonLabel: 'Mais'

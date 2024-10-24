@@ -5,6 +5,9 @@ import { Container, Content, Heading, ImageContainer } from './styles'
 import { Tabs } from './Tabs'
 import { HeadingContentTab, ContentTab, Highlight } from './Tabs/styles'
 import Image from 'next/image'
+import ArrowHeading from '../../../public/icons/arrow-heading.svg'
+import Arrow from '../../../public/icons/arrow.svg'
+import PrismCut from '../../../public/images/prism-cut.svg'
 
 interface WorkExperiencesProps {
   workExperiencesContent: JobsContent
@@ -15,7 +18,7 @@ export function WorkExperiences({ workExperiencesContent }: WorkExperiencesProps
     <Container id="work-experiences">
       <Content data-aos="fade-up">
         <Heading>
-          <Image src="/icons/arrow-heading.svg" alt="Big arrow with led" />
+          <Image  src={ArrowHeading} alt="Big arrow with led" />
 
           <h1>{workExperiencesContent.heading}</h1>
         </Heading>
@@ -45,7 +48,7 @@ export function WorkExperiences({ workExperiencesContent }: WorkExperiencesProps
                   <ul>
                     {experience.activities.map(activity => (
                       <li key={activity}>
-                        <Image src="/icons/arrow.svg" alt="Red arrow with led" />
+                        <Image  src={Arrow} alt="Red arrow with led" />
 
                         <p>{activity}</p>
                       </li>
@@ -59,7 +62,7 @@ export function WorkExperiences({ workExperiencesContent }: WorkExperiencesProps
       </Content>
 
       <ImageContainer>
-        <Image src="/images/prism-cut.svg" alt="Cut prisma with led" />
+        <Image  src={PrismCut} alt="Cut prisma with led" />
       </ImageContainer>
     </Container>
   )

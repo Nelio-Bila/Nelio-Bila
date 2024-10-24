@@ -9,6 +9,7 @@ import {
   ContactButton
 } from './styles'
 import Image from 'next/image'
+import BearingLed from '../../../public/images/bearing-led.svg'
 
 interface PresentationProps {
   presentationContent: PresentationContent
@@ -40,7 +41,7 @@ export function Presentation({
       </Content>
 
       <ImageContainer>
-        <Image src="/images/bearing-led.svg" alt="Bearing with led" />
+        <Image  src={BearingLed} alt="Bearing with led" />
       </ImageContainer>
     </Container>
   )

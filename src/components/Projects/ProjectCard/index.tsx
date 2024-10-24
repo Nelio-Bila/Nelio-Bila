@@ -15,6 +15,12 @@ import {
   SeparateRow
 } from './styles'
 import Image from 'next/image'
+import Eslint from '../../../../public/icons/eslint.svg'
+import Prettier from '../../../../public/icons/prettier.svg'
+import Test from '../../../../public/icons/test.svg'
+import Mobile from '../../../../public/icons/mobile.svg'
+import Web from '../../../../public/icons/web.svg'
+import Desktop from '../../../../public/icons/desktop.svg'
 
 interface ProjectCardProps {
   projectContent: ProjectContent
@@ -25,7 +31,7 @@ export function ProjectCard({ projectContent }: ProjectCardProps) {
     <Container data-aos="fade-up" data-aos-duration="1100">
       <Content>
         <Cover>
-          <Image src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} />
+          <Image  src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} fill/>
 
           <CoverActions className="project-card-actions">
             {projectContent.figmaLink && (
@@ -68,28 +74,28 @@ export function ProjectCard({ projectContent }: ProjectCardProps) {
               {projectContent.goodHabits.map(technology => {
                 if (technology === 'eslint')
                   return (
-                    <Image key={technology} src="/icons/eslint.svg" alt="Eslint icon" />
+                    <Image  key={technology} src={Eslint} alt="Eslint icon" />
                   )
                 else if (technology === 'prettier')
                   return (
-                    <Image key={technology} src="/icons/prettier.svg" alt="Prettier icon" />
+                    <Image  key={technology} src={Prettier} alt="Prettier icon" />
                   )
                 else if (technology === 'test')
-                  return <Image key={technology} src="/icons/test.svg" alt="Test icon" />
+                  return <Image  key={technology} src={Test} alt="Test icon" />
               })}
             </div>
 
             <div>
               {projectContent.isResponsive || projectContent.platform === 'mobile' ? (
-                <Image src="/icons/mobile.svg" alt="Cellphone icon" />
+                <Image  src={Mobile} alt="Cellphone icon" />
               ) : null}
 
               {projectContent.platform === 'web' && (
-                <Image src="/icons/web.svg" alt="Web icon" />
+                <Image  src={Web} alt="Web icon" />
               )}
 
               {projectContent.platform === 'desktop' && (
-                <Image src="/icons/desktop.svg" alt="Desktop icon" />
+                <Image  src={Desktop} alt="Desktop icon" />
               )}
             </div>
           </SeparateRow>

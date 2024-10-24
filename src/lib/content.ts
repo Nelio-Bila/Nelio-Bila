@@ -19,7 +19,7 @@ export async function getContent() {
       },
       aboutSection: {
         heading: 'Sobre mim',
-        text: 'Amante da tecnologia, com foco em desenvolvimento fullstack e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projectos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenharia de Desenvolvimento de Sistemas, criando aplicações de forma autônoma, em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        text: 'Amante da tecnologia, com foco em desenvolvimento fullstack e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projectos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenharia de Desenvolvimento de Sistemas, sempre em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
@@ -142,31 +142,67 @@ export async function getContent() {
         'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
       presentationSection: {
         heading: ['Hi', 'I am', 'Nélio Bila'],
-        text: "I'm a Software developer, with more than 2 years of experience in web and mobile development, interface design and user experience. I had two incredible work experiences, where I was responsible for planning, prototyping and developing high value projects for both sectors where I worked. In addition to being very determined for my personal growth in knowledge in the field of technology, always creating innovative projects for myself with a lot of love and dedication."
+        text: "I'm an ICT Senior Technician, a Fullstack developer, with experience in web and mobile development. I am very determined in my personal and professional growth in the technology field, developing innovative projects with much love and dedication."
       },
       aboutSection: {
         heading: 'About me',
-        text: 'Technology lover, with a focus on fullstack development, user interface and software engineering. I aim to become an increasingly complete professional, always looking to learn and develop projects to apply and share knowledge and experiences. Degree in Systems Development Engineering, creating applications autonomously, looking for challenges, working with charisma, will and passion. Professionalism is my focus.',
+        text: 'Technology lover, with a focus on fullstack development and software engineering. My goal is to become an increasingly complete professional, always seeking to learn and develop projects to apply and share knowledge and experiences. Graduated in Systems Development Engineering, always seeking challenges, working with charisma, will and passion. Professionalism is my focus.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
         },
-        recentTechnologies: ['React', 'NodeJs', 'NextJs', 'Laravel']
+        recentTechnologies: ['React', 'NextJs', 'Laravel', 'Django', 'NodeJs', 'Spring Boot']
       },
       jobsSection: {
-        heading: 'Profissional Experience',
+        heading: 'Professional Experience',
         jobs: [
+          {
+            company: 'Hospital Central de Maputo',
+            experiences: [
+              {
+                company: 'Hospital Central de Maputo',
+                siteLink: 'https://hcm.gov.mz/',
+                role: 'ICT Senior Technician',
+                startDate: '10-10-2021',
+                endDate: 'Present',
+                activities: [
+                  'Responsible for the full operation of Information Systems installed at the Hospital.',
+                  'Training and assistance to employees in using Hospital computing resources.',
+                  'Assessment of needs and requirements gathering for better operation and expansion of computer systems',
+                ]
+              },
+            ]
+          },
+          {
+            company: 'Cortex',
+            experiences: [
+              {
+                company: 'Cortex',
+                siteLink: 'https://cortex.co.mz/',
+                role: 'Software Developer',
+                startDate: '10-07-2023',
+                endDate: '10-12-2023',
+                activities: [
+                  'Responsible for implementing features in the backend (Laravel) and frontend (Next.js) of the Bilheteca application',
+                  'Responsible for tracking and fixing bugs in the backend (Laravel) and frontend (Next.js) of the Bilheteca application',
+                  'Documentation of APIs and other components of the Bilheteca application',
+                ]
+              },
+            ]
+          },
           {
             company: 'Cursiva',
             experiences: [
               {
                 company: 'Cursiva',
-                siteLink: 'job.site_link.url',
-                role: 'React Developer',
+                siteLink: 'https://app.explicador.co.mz/',
+                role: 'Software Developer',
                 startDate: '10-10-2021',
                 endDate: '18-10-2022',
-                activities: ['Development of multiple modules']
-              }
+                activities: [
+                  'Implementation of development techniques for system elaboration (Technical documentation of applications, using flowcharts and wireframes). Redesign and prototyping of the company\'s main web services using Figma. Maintenance and implementation of improvements in the organization\'s public and private services.'
+                ]
+              },
             ]
           }
         ]
@@ -180,7 +216,7 @@ export async function getContent() {
               alt: 'Somais'
             },
             name: 'Somais',
-            description: ['Android app developed with React Native'],
+            description: ['Android application developed with React Native'],
             platform: 'React Native',
             isResponsive: true,
             mainTechnologies: '',
@@ -192,11 +228,11 @@ export async function getContent() {
           {
             thumbnail: {
               url: 'https://github.com/nelio-bila.png',
-              alt: 'Orthophaedics Portal'
+              alt: 'Orthoprosthetics Portal'
             },
-            name: 'Orthophaedics Portal',
+            name: 'Orthoprosthetics Portal',
             description: [
-              'Web Platform developed with Laravel on the backend and Vue js on the frontend'
+              'Web Platform developed with Laravel on the backend and Vue.js on the frontend'
             ],
             platform: 'Laravel',
             isResponsive: true,
@@ -212,7 +248,9 @@ export async function getContent() {
       contactSection: {
         heading: ['Contact'],
         text: [
-          'I am open to job opportunities. Any form provided here may be useful to get in touch with me'
+          'I am open to job opportunities. Any form provided here may be useful to get in touch with me',
+          '+258 867539079',
+          '+258 845935059',
         ]
       }
     }

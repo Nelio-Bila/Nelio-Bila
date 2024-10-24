@@ -31,7 +31,7 @@ export function ProjectCard({ projectContent }: ProjectCardProps) {
     <Container data-aos="fade-up" data-aos-duration="1100">
       <Content>
         <Cover>
-          <Image  src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} fill/>
+          <Image  src={projectContent.thumbnail.url} alt={projectContent.thumbnail.alt} width={100} height={100}/>
 
           <CoverActions className="project-card-actions">
             {projectContent.figmaLink && (

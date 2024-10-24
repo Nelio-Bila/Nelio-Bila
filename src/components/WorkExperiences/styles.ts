@@ -71,12 +71,12 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
 
-  img {
-    height: 38rem;
+  // img {
+  //   // height: 38rem;
 
-    @media (max-width: 1225px) {
-      height: 30rem;
-    }
+  //   @media (max-width: 1225px) {
+  //     height: 30rem;
+  //   }
 
     @media (max-width: 1090px) {
       display: none;

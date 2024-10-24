@@ -22,6 +22,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'denuncias-vozes-de-mulheres-ghjk6.ondigitalocean.app',
+        port: '',
+        pathname: '/**',
+      },
     ],
     localPatterns: [
       {

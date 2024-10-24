@@ -168,16 +168,16 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
 
-  img {
-    height: 38rem;
-  }
+  // img {
+  //   height: 38rem;
+  // }
 
   @media (min-width: 1550px) {
     margin-left: 11rem;
 
-    img {
-      height: 44rem;
-    }
+    // img {
+    //   height: 44rem;
+    // }
   }
 
   @media (max-width: 1335px) {

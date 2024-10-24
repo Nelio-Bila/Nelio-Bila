@@ -51,7 +51,8 @@ export function About({ aboutContent }: AboutProps) {
             <Image
               src={aboutContent.profilePhoto.url}
               alt={aboutContent.profilePhoto.alt}
-              fill
+              width={200}
+              height={200}
             />
           </PhotoContainer>
         </Column>

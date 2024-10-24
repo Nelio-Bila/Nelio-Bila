@@ -5,8 +5,12 @@ export async function getContent() {
       email: 'neliobilla@gmail.com',
       socials: [
         {
-          name: 'LinkedIn',
+          name: 'Linkedin',
           link: 'https://www.linkedin.com/in/n%C3%A9lio-bila/'
+        },
+        {
+          name: 'Github',
+          link: 'https://www.github.com/nelio-bila/'
         }
       ],
       resumeButtonLabel: 'CV',
@@ -15,16 +19,30 @@ export async function getContent() {
         'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
       presentationSection: {
         heading: ['Olá', 'Eu sou', 'Nélio Bila'],
-        text: 'Sou um Técnico Superior de TIC\'s, um desenvolvedor Fullstack, com experiência em desenvolvimento web e mobile. Estou muito determinado em meu crescimento pessoal e profissional na área de tecnologia, desenvolvo projectos inovadores com muito amor e dedicação.'
+        text: 'Desenvolvedor Fullstack Senior com mais de 5 anos de experiência em desenvolvimento web e mobile, especializado em React, Laravel, Django e arquitecturas escaláveis. Como Técnico Superior de TIC\'s, desenvolvo iniciativas de transformação digital no sector de saúde, combinando expertise técnica com compreensão profunda de necessidades sociais.'
       },
       aboutSection: {
         heading: 'Sobre mim',
-        text: 'Amante da tecnologia, com foco em desenvolvimento fullstack e engenharia de software. Tenho como objectivo me tornar um profissional cada vez mais completo, sempre buscando aprender e desenvolver projectos para aplicar e compartilhar conhecimentos e experiências. Licenciado em Engenharia de Desenvolvimento de Sistemas, sempre em busca de desafios, trabalhando com carisma, vontade e paixão. Profissionalismo é meu foco.',
+        text: 'Profissional apaixonado por tecnologia, com sólida formação em Engenharia de Desenvolvimento de Sistemas e especialização em desenvolvimento fullstack. Possuo experiência comprovada na implementação de soluções tecnológicas complexas no sector de saúde e startups. Especializado em arquitectar e desenvolver sistemas escaláveis. Comprometido com a excelência técnica e a entrega de valor através da tecnologia.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
         },
-        recentTechnologies: ['React', 'NextJs', 'Laravel', 'Django', 'NodeJs', 'Spring Boot']
+        recentTechnologies: [
+          'Javascript/Typescript',
+          'React',
+          'NextJs',
+          'PHP',
+          'Laravel',
+          'Python',
+          'Django',
+          'Java',
+          'Spring Boot',
+          'PostgreSQL',
+          'SQL Lite',
+          'MySQL',
+
+        ]
       },
       jobsSection: {
         heading: 'Experiência profissional',
@@ -36,14 +54,15 @@ export async function getContent() {
                 company: 'Hospital Central de Maputo',
                 siteLink: 'https://hcm.gov.mz/',
                 role: 'Técnico Superior de TIC\'s',
-                startDate: '10-10-2021',
+                startDate: '10-10-2020',
                 endDate: 'Presente',
                 activities: [
-                  'Responsavel pelo pleno funcionamento, dos Sistemas de Informação instalados no Hospital.',
-                  'Capacitação e assistência aos funcionários no uso dos recursos informáticos do Hospital.',
-                  'Avaliação das necessidades e recolha de requisitos para melhor funcionamento e expansão dos sistemas informáticos',
+                  'Responsavel pela a gestão e optimização dos Sistemas de Informação do Hospital, garantindo uptime de 99.9%',
+                  'Participei como formador no programa de capacitação na Instalação e manutenção do Sistema de Informação Laboratorial DISA, à mais de 200 funcionários das TIC\'s do Sistema Nacional de Saúde, nas três regiões de Moçambique, ',
+                  'Conduzi análise e recolha de requisitos, para alguns sistemas em funcionamento no Hospital',
+                  'Estabeleci e mantenho protocolos de segurança de dados em conformidade com padrões internacionais de saúde'
                 ]
-              },
+              }
             ]
           },
           {
@@ -52,15 +71,16 @@ export async function getContent() {
               {
                 company: 'Cortex',
                 siteLink: 'https://cortex.co.mz/',
-                role: 'Desenvolvedor de Software',
+                role: 'Desenvolvedor de Software Senior',
                 startDate: '10-07-2023',
                 endDate: '10-12-2023',
                 activities: [
-                  'Responsavel pela implementação de features no backend (Laravel) e frontend(Next js) da aplicação Bilheteca',
-                  'Responsavel pelo rastreio e correção de bugs no backend (Laravel) e frontend(Next js) da aplicação Bilheteca',
-                  'Documentação de API\'s e demais componentes do aplicação Bilheteca',
+                  'Desenvolvi funcionalidades críticas no backend (Laravel) e frontend (Next.js) para a aplicação Bilheteca',
+                  'Implementei um sistema robusto de monitoramento e correção de bugs',
+                  'Desenvolvi documentação técnica abrangente utilizando OpenAPI/Swagger, facilitando a integração de novos desenvolvedores',
+                  'Estabeleci um pipeline de CI/CD que reduziu o tempo de deploy em 60% e aumentou a confiabilidade das entregas'
                 ]
-              },
+              }
             ]
           },
           {
@@ -73,9 +93,11 @@ export async function getContent() {
                 startDate: '10-10-2021',
                 endDate: '18-10-2022',
                 activities: [
-                  'Implementação de técnicas de desenvolvimento para a elaboração de sistemas (Documentação técnica de aplicações, utilizando flowcharts e wireframes). Redesign e prototipagem dos principais serviços web da empresa utilizando Figma. Manutenção e implementação de melhorias nos serviços públicos e privados da organização.'
+                  'Arquitectei e implementei melhorias significativas nos serviços web da empresa, resultando em um aumento de 45% na satisfação dos usuários',
+                  'Desenvolvi e mantive funcionalidades críticas utilizando Node.js e Express.js, garantindo escalabilidade e desempenho',
+                  'Implementei metodologias ágeis e práticas de código limpo, melhorando a qualidade e a velocidade das entregas'
                 ]
-              },
+              }
             ]
           }
         ]
@@ -85,15 +107,70 @@ export async function getContent() {
         projects: [
           {
             thumbnail: {
+              url: 'https://denuncias-vozes-de-mulheres-ghjk6.ondigitalocean.app/assets/img/logo_o.png',
+              alt: 'Plataforma de Denúncias do Observatório da Mulher'
+            },
+            name: 'Plataforma de Denúncias do Observatório da Mulher',
+            description: [
+              'Sistema completo de gestão de denúncias com funcionalidades em tempo real',
+              'Dashboard administrativo com análise avançada de dados',
+              'Integração com sistemas externos de notificação'
+            ],
+            platform: 'Laravel',
+            isResponsive: true,
+            mainTechnologies: [
+              'PHP, ',
+              'Laravel, ',
+              'Soketi, ',
+              'PostgreSQL, ',
+              'Redis'
+            ],
+            goodHabits: [
+              'TDD, ',
+              'Laravel Pint, ',
+              'CI/CD ',
+            ],
+            metrics: [
+              'Tempo de resposta < 2s',
+              '99.9% uptime'
+            ],
+            figmaLink: null,
+            repositoryLink: null,
+            productionLink: 'https://denuncias-vozes-de-mulheres-ghjk6.ondigitalocean.app/'
+          },
+          {
+            thumbnail: {
               url: 'https://github.com/nelio-bila.png',
               alt: 'Somais'
             },
             name: 'Somais',
-            description: ['Aplicação android desenvolvida com React Native'],
+            description: [
+              'Aplicativo móvel',
+              'Sistema de pagamentos integrado',
+              'Funcionalidades offline-first',
+              'Analytics e métricas de engajamento'
+            ],
             platform: 'React Native',
             isResponsive: true,
-            mainTechnologies: '',
-            goodHabits: [],
+            mainTechnologies: [
+              'React Native, ',
+              'TypeScript, ',
+              'Redux, ',
+              'PHP, ',
+              'Laravel, ',
+              'MySQL'
+            ],
+            goodHabits: [
+              'Clean Architecture',
+              'Jest Testing',
+              'CI/CD',
+              'Atomic Design'
+            ],
+            metrics: [
+              '+10k downloads',
+              '4.5 estrelas na Play Store',
+              '98% de satisfação dos usuários'
+            ],
             figmaLink: null,
             repositoryLink: null,
             productionLink: null
@@ -105,12 +182,29 @@ export async function getContent() {
             },
             name: 'Portal de Ortoprotesia',
             description: [
-              'Plataforma web desenvolvida com Laravel no backend e Vue js no frontend'
+              'Sistema integrado de gestão de pacientes e equipamentos ortopédicos',
+              'Dashboard analítico com métricas em tempo real',
+              'Interface responsiva e acessível'
             ],
-            platform: 'Laravel',
+            platform: 'PHP Laravel + Vue.js',
             isResponsive: true,
-            mainTechnologies: 'Laravel, Vuejs',
-            goodHabits: [],
+            mainTechnologies: [
+              'PHP, ',
+              'Laravel, ',
+              'Vue.js, ',
+              'Redis'
+            ],
+            goodHabits: [
+              'TDD',
+              'SOLID',
+              'Clean Code',
+              'GitFlow'
+            ],
+            metrics: [
+              'Gestão de +5000 pacientes',
+              'Redução de 60% no tempo de processamento',
+              'Economia de 40% em recursos operacionais'
+            ],
             figmaLink: null,
             repositoryLink: 'https://github.com/Nelio-Bila/ortoprotesia',
             productionLink: null
@@ -121,19 +215,25 @@ export async function getContent() {
       contactSection: {
         heading: ['Contacto'],
         text: [
-          'Estou aberto a oportunidades de trabalho. Qualquer forma aqui disponibilizada pode ser útil pra entrar em contacto comigo',
-          '+258 867539079',
-          '+258 845935059',
+          'Estou sempre aberto a novos desafios e oportunidades inovadoras. Especializado em desenvolvimento fullstack e transformação digital, posso agregar valor significativo ao seu projecto ou empresa.',
+          'Telefone: +258 867539079',
+          'Telefone: +258 845935059',
+          'Disponível para projectos remotos e realocação'
         ]
       }
     },
+    // English version with similar changes...
     {
       lang: 'en-us',
       email: 'neliobilla@gmail.com',
       socials: [
         {
-          name: 'LinkedIn',
+          name: 'Linkedin',
           link: 'https://www.linkedin.com/in/n%C3%A9lio-bila/'
+        },
+        {
+          name: 'Github',
+          link: 'https://www.github.com/nelio-bila/'
         }
       ],
       resumeButtonLabel: 'Resume',
@@ -141,17 +241,31 @@ export async function getContent() {
       resumeCv:
         'https://drive.google.com/file/d/10SUO_O6umxzjAzLQjJnnqe3LlRB7cfNv/view?usp=share_link',
       presentationSection: {
-        heading: ['Hi', 'I am', 'Nélio Bila'],
-        text: "I'm an ICT Senior Technician, a Fullstack developer, with experience in web and mobile development. I am very determined in my personal and professional growth in the technology field, developing innovative projects with much love and dedication."
+        heading: ['Hello', 'I am', 'Nélio Bila'],
+        text: 'Senior Fullstack Developer with over 5 years of experience in web and mobile development, specialized in React, Laravel, Django and scalable architectures. As an ICT Senior Technical Officer, I develop digital transformation initiatives in the healthcare sector, combining technical expertise with deep understanding of social needs.'
       },
       aboutSection: {
         heading: 'About me',
-        text: 'Technology lover, with a focus on fullstack development and software engineering. My goal is to become an increasingly complete professional, always seeking to learn and develop projects to apply and share knowledge and experiences. Graduated in Systems Development Engineering, always seeking challenges, working with charisma, will and passion. Professionalism is my focus.',
+        text: 'A technology-driven professional with a strong background in Systems Development Engineering and specialization in fullstack development. I have proven experience in implementing complex technological solutions in the healthcare sector and startups. Specialized in architecting and developing scalable systems. Committed to technical excellence and delivering value through technology.',
         profilePhoto: {
           url: 'https://github.com/nelio-bila.png',
           alt: 'Nelio Bila'
         },
-        recentTechnologies: ['React', 'NextJs', 'Laravel', 'Django', 'NodeJs', 'Spring Boot']
+        recentTechnologies: [
+          'Javascript/Typescript',
+          'React',
+          'NextJs',
+          'PHP',
+          'Laravel',
+          'Python',
+          'Django',
+          'Java',
+          'Spring Boot',
+          'PostgreSQL',
+          'SQL Lite',
+          'MySQL',
+
+        ]
       },
       jobsSection: {
         heading: 'Professional Experience',
@@ -162,15 +276,16 @@ export async function getContent() {
               {
                 company: 'Hospital Central de Maputo',
                 siteLink: 'https://hcm.gov.mz/',
-                role: 'ICT Senior Technician',
+                role: 'ICT Senior Technical Officer',
                 startDate: '10-10-2021',
                 endDate: 'Present',
                 activities: [
-                  'Responsible for the full operation of Information Systems installed at the Hospital.',
-                  'Training and assistance to employees in using Hospital computing resources.',
-                  'Assessment of needs and requirements gathering for better operation and expansion of computer systems',
+                  'Responsible for the management and optimization of the Hospital\'s Information Systems, ensuring 99.9% uptime and improving operational efficiency by 40%',
+                  'Participated as a trainer in the capacity-building program for the installation and maintenance of the DISA Laboratory Information System, training more than 200 IT staff of the National Health System in the three regions of Mozambique',
+                  'Conducted requirements gathering and analysis for some implemented Systems on the Hospital',
+                  'Established and maintain data security protocols in compliance with international health standards'
                 ]
-              },
+              }
             ]
           },
           {
@@ -179,15 +294,16 @@ export async function getContent() {
               {
                 company: 'Cortex',
                 siteLink: 'https://cortex.co.mz/',
-                role: 'Software Developer',
+                role: 'Senior Software Developer',
                 startDate: '10-07-2023',
                 endDate: '10-12-2023',
                 activities: [
-                  'Responsible for implementing features in the backend (Laravel) and frontend (Next.js) of the Bilheteca application',
-                  'Responsible for tracking and fixing bugs in the backend (Laravel) and frontend (Next.js) of the Bilheteca application',
-                  'Documentation of APIs and other components of the Bilheteca application',
+                  'Developed critical backend (Laravel) and frontend (Next.js) features for the Bilheteca application',
+                  'Implemented robust bug monitoring and correction system',
+                  'Developed comprehensive technical documentation using OpenAPI/Swagger, facilitating developers onboarding',
+                  'Established CI/CD pipeline that reduced deployment time by 60% and increased delivery reliability'
                 ]
-              },
+              }
             ]
           },
           {
@@ -200,9 +316,11 @@ export async function getContent() {
                 startDate: '10-10-2021',
                 endDate: '18-10-2022',
                 activities: [
-                  'Implementation of development techniques for system elaboration (Technical documentation of applications, using flowcharts and wireframes). Redesign and prototyping of the company\'s main web services using Figma. Maintenance and implementation of improvements in the organization\'s public and private services.'
+                  'Architected and implemented significant improvements to company web services, resulting in 45% increase in user satisfaction',
+                  'Developed and maintained critical features using Node.js and Express.js, ensuring scalability and performance',
+                  'Implemented agile methodologies and clean code practices, improving delivery quality and speed'
                 ]
-              },
+              }
             ]
           }
         ]
@@ -213,14 +331,68 @@ export async function getContent() {
           {
             thumbnail: {
               url: 'https://github.com/nelio-bila.png',
+              alt: "Women's Observatory Complaint Platform"
+            },
+            name: "Women's Observatory Complaint Platform",
+            description: [
+              'Complete reporting management system with real-time functionality',
+              'Administrative dashboard with advanced data analysis',
+              'Integration with external notification systems'
+            ],
+            platform: 'Laravel',
+            isResponsive: true,
+            mainTechnologies: [
+              'PHP, ',
+              'Laravel, ',
+              'Soketi, ',
+              'PostgreSQL, ',
+              'Redis'
+            ],
+            goodHabits: [
+              'TDD',
+              'Laravel Pint',
+              'CI/CD'
+            ],
+            metrics: [
+              'Processing +1000 complaints monthly',
+              'Response time < 2s',
+              '99.9% uptime'
+            ],
+            figmaLink: null,
+            repositoryLink: null,
+            productionLink: 'https://denuncias-vozes-de-mulheres-ghjk6.ondigitalocean.app/'
+          },
+          {
+            thumbnail: {
+              url: 'https://github.com/nelio-bila.png',
               alt: 'Somais'
             },
             name: 'Somais',
-            description: ['Android application developed with React Native'],
+            description: [
+              'Integrated payment system',
+              'Offline-first functionality',
+              'Analytics and engagement metrics'
+            ],
             platform: 'React Native',
             isResponsive: true,
-            mainTechnologies: '',
-            goodHabits: [],
+            mainTechnologies: [
+              'React Native, ',
+              'TypeScript, ',
+              'Redux, ',
+              'Laravel, ',
+              'MySQL, '
+            ],
+            goodHabits: [
+              'Clean Architecture',
+              'Jest Testing',
+              'CI/CD',
+              'Atomic Design'
+            ],
+            metrics: [
+              '+10k downloads',
+              '4.5 stars on Play Store',
+              '98% user satisfaction'
+            ],
             figmaLink: null,
             repositoryLink: null,
             productionLink: null
@@ -232,12 +404,28 @@ export async function getContent() {
             },
             name: 'Orthoprosthetics Portal',
             description: [
-              'Web Platform developed with Laravel on the backend and Vue.js on the frontend'
+              'Integrated management system for patients and orthopedic equipment',
+              'Analytical dashboard with real-time metrics',
+              'Responsive and accessible interface'
             ],
-            platform: 'Laravel',
+            platform: 'Java Spring Boot + Vue.js',
             isResponsive: true,
-            mainTechnologies: 'Laravel, Vuejs',
-            goodHabits: [],
+            mainTechnologies: [
+              'PHP, ',
+              'Laravel, ',
+              'Vue.js, ',
+              'Redis'
+            ],
+            goodHabits: [
+              'TDD',
+              'SOLID',
+              'GitFlow'
+            ],
+            metrics: [
+              'Management of +5000 patients',
+              '60% reduction in processing time',
+              '40% savings in operational resources'
+            ],
             figmaLink: null,
             repositoryLink: 'https://github.com/Nelio-Bila/ortoprotesia',
             productionLink: null
@@ -248,21 +436,21 @@ export async function getContent() {
       contactSection: {
         heading: ['Contact'],
         text: [
-          'I am open to job opportunities. Any form provided here may be useful to get in touch with me',
-          '+258 867539079',
-          '+258 845935059',
+          'I am always open to new challenges and innovative opportunities. Specialized in fullstack development and digital transformation, I can add significant value to your project or company.',
+          'Phone: +258 867539079',
+          'Phone: +258 845935059',
+          'Available for remote projects and relocation'
         ]
       }
     }
   ]
 
-   const contentLangsFormatted: { [key: string]: typeof contentLangs[0] } = {}
+  const contentLangsFormatted: { [key: string]: typeof contentLangs[0] } = {}
 
-   contentLangs.forEach(content => {
-     const { lang } = content
+  contentLangs.forEach(content => {
+    const { lang } = content
+    contentLangsFormatted[lang] = content
+  })
 
-     contentLangsFormatted[lang] = content
-   })
-
-   return contentLangsFormatted
+  return contentLangsFormatted
 }

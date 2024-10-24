@@ -81,7 +81,7 @@ const Content: ContentType = {
         description: ['Meu portifolio'],
         platform: 'Nextjs',
         isResponsive: true,
-        mainTechnologies: 'Javascript',
+        mainTechnologies: ['Javascript'],
         goodHabits: ['Clean code', 'TDD'],
         figmaLink: null,
         repositoryLink: 'https://github.com/Nelio-Bila/Nelio-Bila.git ',

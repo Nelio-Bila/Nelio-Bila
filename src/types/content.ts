@@ -42,7 +42,7 @@ export interface ProjectContent {
   description: string[]
   platform: string
   isResponsive: boolean
-  mainTechnologies: string
+  mainTechnologies: string[]
   goodHabits: string[]
   figmaLink: string | null
   repositoryLink: string | null
